@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaçocaWS</title>
+    <link rel="icon" href="foto-perfil.jpeg">
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #8c00a3 0%, #d442e8 100%);
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #44024d;
+            width: 100%;
+            max-width: 500px;
+            min-height: 80vh;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.616);
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .main-buttons img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .main-buttons p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: white;
+        }
+        .main-buttons-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 50px; /* Ajustado para 50px de distância */
+        }
+        .main-buttons-links a {
+            margin: 10px 0;
+            width: 100%;
+            text-decoration: none; /* Remove o sublinhado padrão dos links */
+        }
+        .main-buttons-links button {
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px; /* Aumentado para 20px */
+            background-color: #1e1e1e; /* Alterado para #1e1e1e */
+            color: white; /* Alterado para branco */
+        }
+        .main-buttons-links button:hover{
+            background-color: #333333;
+        }
+        .main-buttons-links img {
+            width: 45px; /* Aumentado para 45px em desktops */
+            height: 45px; /* Aumentado para 45px em desktops */
+            margin-right: 15px; /* Ajustado para manter a proporção */
+            border-radius: 0;
+        }
+
+        @media (max-width: 600px) {
+            .main {
+                padding: 0;
+            }
+            .main-buttons {
+                min-height: 100vh;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .main-buttons img {
+                width: 80px;
+                height: 80px;
+            }
+            .main-buttons p {
+                font-size: 16px;
+            }
+            .main-buttons-links p{
+               margin: 20px;
+            }
+            .main-buttons-links {
+                margin-top: 40px; /* Ajustado para telas menores */
+                gap: 10px;
+                font-size: 20px;
+                color: white; /* Já estava correto, mantido para clareza */
+            }
+            .main-buttons-links button {
+                font-size: 18px; /* Ajustado para telas menores */
+                padding: 15px 10px; /* Aumentado o padding vertical */
+            }
+            .main-buttons-links img {
+                width: 35px; /* Ajustado para 35px em celulares */
+                height: 35px; /* Ajustado para 35px em celulares */
+                margin-right: 30px; /* Ajustado para manter a proporção */
+            }
+            .main-buttons-links a {
+                margin: 10px 0; /* Reduzido de 20px para 10px */
+            }
+        }
+    </style>
+</head>
+<body>
+   <main class="main"> 
+        <div class="main-buttons">
+            <div class="profile-section">
+                <img src="foto-perfil.jpeg" alt="Foto de perfil">
+                <p>Paçoca</p>
+            </div>
+            <div class="main-buttons-links">
+                <a href="https://www.tiktok.com/@pacocawr" target="_blank">
+                    <button type="button">
+                        <img src="tiktok.svg" alt="Tiktok">Tiktok
+                    </button>
+                </a>
+                <a href="https://youtube.com/@pacocaa13" target="_blank">
+                    <button type="button">
+                        <img src="youtube.svg" alt="Icone do Youtube">Youtube
+                    </button>
+                </a>
+                <a href="">
+                    <button type="button">
+                        <img src="arrow-down-short.svg" alt="ceta pra baixo">Download textura
+                    </button>
+                </a>
+               <a href="">
+                    <button type="button">
+                        <img src="arrow-down-short.svg" alt="ceta pra baixo">Download textura
+                    </button>
+                </a>
+            </div>
+        </div>
+   </main>
+</body>
+</html>
